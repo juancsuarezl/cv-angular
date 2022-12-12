@@ -1,0 +1,82 @@
+img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.text-bold {
+  font-weight: bold;
+  color: #114d76;
+}
+
+.fancy {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+.centered-list {
+  margin: 5px auto;
+  display: inline-flex;
+  width: 33%;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: bold;
+  color: #114d76;
+  margin: 20px auto;
+  margin-top: 120px !important;
+}
+
+.learning-center {
+  font-weight: bold;
+  margin:15px 20px;
+  color: #0099ff;
+  margin-left: 35px;
+}
+
+.company {
+  color: #0099ff;
+  font-weight: bold;
+}
+
+.card-content {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px;
+  width:95%;
+  height: 230px;
+  margin: 10px;
+  margin-left: 0px !important;
+  background-color:#cde6f5;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #010575;
+
+}
+
+a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+

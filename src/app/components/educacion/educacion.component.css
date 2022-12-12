@@ -1,0 +1,45 @@
+.list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.text-bold {
+  font-weight: bold;
+  color: #114d76;
+}
+
+.fancy {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+.centered-list {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  margin-left: 50px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: bold;
+  color: #114d76;
+  margin: 20px auto;
+}
+
+.learning-center {
+  font-weight: bold;
+  margin:15px 20px;
+  color: #0099ff;
+  margin-left: 35px;
+}

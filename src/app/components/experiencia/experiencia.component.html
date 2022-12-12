@@ -1,0 +1,21 @@
+
+  <div class="text-center title">Mi experiencia</div>
+    <ul class="centered-list" *ngFor="let job of jobs">
+        <div class="card card-content">
+          <a href="{{job.href}}" target="_blank">
+            <li class="list"><img src="{{ job.companyIcon}}" alt="">
+              <span class="company-name">{{ job.companyName }}</span>
+            </li>
+          </a>
+          <li class="list"><i class="{{ job.chargeIcon }} icon"></i>{{ job.charge }}</li>
+          <li class="list"><i class="{{ job.descIcon }} icon"></i>{{ job.description }}</li>
+          <li class="list"><i class="{{ job.timeIcon }} icon"></i>{{ job.time }}</li>
+        </div>
+    </ul>
+
+  <div style="margin: 10px auto;">
+    <app-social-media></app-social-media>
+  </div>
+
+
+

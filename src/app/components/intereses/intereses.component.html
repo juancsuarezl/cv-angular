@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="text-center title">Mis intereses personales</div>
+  <ul class="interests-list" *ngFor="let interest of interests">
+    <li class="list">
+      <span><i class="{{ interest.icon }} icon"></i></span>{{ interest.name }}: <span>{{ interest.description}}</span>
+    </li>
+  </ul>
+  <app-social-media></app-social-media>
+</div>

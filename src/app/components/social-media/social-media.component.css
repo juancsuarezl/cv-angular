@@ -1,0 +1,21 @@
+.redes {
+  margin: 20px auto;
+}
+
+.redes li {
+  display: inline;
+  justify-content: center;
+  margin-right: 25px;
+
+}
+
+.lg-font {
+  font-size: 26px;
+}
+
+.centered-text {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

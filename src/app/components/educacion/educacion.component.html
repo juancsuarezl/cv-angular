@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="text-center title" style="margin-top:120px;">1. Presencial</div>
+  <ul class="centered-list" *ngFor="let presencial of presenciales">
+    <li class="list"><i class="{{ presencial.class }} icon"></i>{{presencial.name}}, {{presencial.place}}. <span class="fancy">{{ presencial.title}}, {{ presencial.anio }}</span></li>
+  </ul>
+
+  <div class="text-center title">2. Online</div>
+  <div class="learning-center">UDEMY</div>
+  <ul class="centered-list" *ngFor="let udemy of udemys">
+    <li class="list"><i class="{{ udemy.class }} icon"></i>{{udemy.title}}, {{ udemy.anio }}</li>
+  </ul>
+  <div class="learning-center">ITOO</div>
+  <ul class="centered-list" *ngFor="let itoo of itoos">
+    <li class="list"><i class="{{ itoo.class }} icon"></i>{{itoo.title}}, {{ itoo.anio }}</li>
+  </ul>
+  <div class="learning-center">LINKEDIN LEARNING</div>
+  <ul class="centered-list" *ngFor="let in of ins">
+    <li class="list"><i class="{{ in.class }} icon"></i>{{in.title}}, {{ in.anio }}</li>
+  </ul>
+  <div class="learning-center">PUZZLE ACADEMY</div>
+  <ul class="centered-list" *ngFor="let puzzle of puzzles">
+    <li class="list"><i class="{{ puzzle.class }} icon"></i>{{puzzle.title}}, {{ puzzle.anio }}</li>
+  </ul>
+</div>
