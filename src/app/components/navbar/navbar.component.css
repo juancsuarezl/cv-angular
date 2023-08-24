@@ -1,3 +1,12 @@
+/* .container-fluid{
+  display:inline-flex;
+  justify-content: space-between;
+} */
+
+/* .navbar-brand{
+  width: 50px !important;
+} */
+
 .logo-img {
   width: 80%;
   border-radius: 50%;
@@ -10,8 +19,14 @@
 }
 
 .logo {
-  width: 100px !important;
+  width: 120px !important;
+  display:inline-flex;
+  justify-content:space-between;
 }
+
+/* button.navbar-toggler{
+  margin-left:600px;
+} */
 
 .text-lg {
   font-size: 18px;
@@ -21,5 +36,19 @@ ul li a {
   font-family:'Montserrat';
   color:#ffffff;
 }
+
+/****************** MEDIA QUERIES ***************/
+@media screen and (min-width:470px){
+  .navbar-toggler {
+    margin-left:70vw;
+  }
+}
+
+@media screen and (max-width:469px){
+  .navbar-toggler {
+    margin-left:60vw;
+  }
+}
+
 
 

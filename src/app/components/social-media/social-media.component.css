@@ -14,8 +14,35 @@
 }
 
 .centered-text {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+/* .mobile {
+  display:none;
+} */
+
+/******************  MEDIA QUERIES **********************/
+@media screen and (max-width:768px){
+  .desktop {
+    display:none;
+  }
+
+  .mobile {
+    font-weight:bold;
+    color:#212529;
+  }
+}
+
+@media screen and (min-width:769px){
+  /* .desktop {
+    display:none;
+  } */
+
+  .mobile {
+    display:none;
+  }
+}
+

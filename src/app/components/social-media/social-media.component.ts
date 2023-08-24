@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialMediaComponent implements OnInit {
 
+  public year: string = '';
+
   constructor() { }
 
   public redes: Array<any> = [
@@ -19,6 +21,7 @@ export class SocialMediaComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.year = new Date().getFullYear().toString();
   }
 
 }

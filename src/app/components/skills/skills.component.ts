@@ -12,7 +12,8 @@ export class SkillsComponent implements OnInit {
   public frontSkills: Array<any> = [
     {
       title: "FRONTEND",
-      icon: "../assets/img/frontend-icon.png",
+      icon: "fa-solid fa-laptop",
+      //icon: "../assets/img/frontend-icon.png",
       languages: [
         { name: "WORDPRESS", icon: "../../../assets/img/wp-logo.png"},
         { name: "HTML", icon: "../../../assets/img/html-logo.webp"},
@@ -35,7 +36,7 @@ export class SkillsComponent implements OnInit {
       languages: [
         { name: "NODEJS", icon: "../../../assets/img/nodejs-logo.png"},
         { name: "JAVA", icon: "../../../assets/img/java-logo.jpg"},
-        { name: "PHP", icon: "../../../assets/img/php-logo.png"},
+        { name: "SPRING", icon: "../../../assets/img/spring-logo.png"},
         { name: "EXPRESS", icon: "../../../assets/img/express-logo.png"},
         { name: "GRAPHQL", icon: "../../../assets/img/graphql-logo.png"},
         { name: "JPA", icon: "../../../assets/img/jpa-logo.png"},
@@ -99,8 +100,8 @@ export class SkillsComponent implements OnInit {
       title: "IDIOMAS",
       icon: "../../../assets/img/languages-icon.png",
       languages: [
-        { name: "ESPAÑOL", icon: "../../../assets/img/spain-icon.png" },
-        { name: "INGLÉS", icon: "../../../assets/img/usa-icon.png" }
+        { name: "ESPAÑOL (NATIVO)", icon: "../../../assets/img/spain-icon.png" },
+        { name: "INGLÉS (B2)", icon: "../../../assets/img/usa-icon.png" }
       ]
     }
 

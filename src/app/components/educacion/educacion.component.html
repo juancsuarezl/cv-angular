@@ -1,24 +1,46 @@
-<div class="container-fluid">
-  <div class="text-center title" style="margin-top:120px;">1. Presencial</div>
-  <ul class="centered-list" *ngFor="let presencial of presenciales">
-    <li class="list"><i class="{{ presencial.class }} icon"></i>{{presencial.name}}, {{presencial.place}}. <span class="fancy">{{ presencial.title}}, {{ presencial.anio }}</span></li>
-  </ul>
+<div class="row justify-content-center">
+  <div class="text-center main-title">Mi educación</div>
+  <div class="card presencial-card">
+    <div class="title">1. Presencial</div>
+    <ul class="centered-list" *ngFor="let presencial of presenciales">
+      <li class="list"><i class="{{ presencial.class }} icon"></i>
+        <a class="font-link" href="{{presencial.href}}" target="_blank">{{presencial.name}}</a>
+      </li>
+      <li class="list">{{presencial.place}}</li>
+      <li class="list"><span class="fancy">{{ presencial.title}}, {{ presencial.anio }}</span></li>
+    </ul>
+  </div>
 
-  <div class="text-center title">2. Online</div>
-  <div class="learning-center">UDEMY</div>
-  <ul class="centered-list" *ngFor="let udemy of udemys">
-    <li class="list"><i class="{{ udemy.class }} icon"></i>{{udemy.title}}, {{ udemy.anio }}</li>
-  </ul>
-  <div class="learning-center">ITOO</div>
-  <ul class="centered-list" *ngFor="let itoo of itoos">
-    <li class="list"><i class="{{ itoo.class }} icon"></i>{{itoo.title}}, {{ itoo.anio }}</li>
-  </ul>
-  <div class="learning-center">LINKEDIN LEARNING</div>
-  <ul class="centered-list" *ngFor="let in of ins">
-    <li class="list"><i class="{{ in.class }} icon"></i>{{in.title}}, {{ in.anio }}</li>
-  </ul>
-  <div class="learning-center">PUZZLE ACADEMY</div>
-  <ul class="centered-list" *ngFor="let puzzle of puzzles">
-    <li class="list"><i class="{{ puzzle.class }} icon"></i>{{puzzle.title}}, {{ puzzle.anio }}</li>
-  </ul>
+  <div class="card online-card">
+    <div class="title">2. Online</div>
+    <ul class="centered-list" *ngFor="let udemy of udemys">
+      <li class="online-list"><i class="{{ udemy.class }} icon"></i>{{udemy.title}}, {{ udemy.anio }},
+        <a href="https://udemy.com"><span style="font-weight:bold;">{{ udemy.institute }}</span></a>
+      </li>
+    </ul>
+
+    <!-- <ul class="centered-list" *ngFor="let itoo of itoos">
+      <li class="online-list"><i class="{{ itoo.class }} icon"></i>{{itoo.title}}, {{ itoo.anio }},
+        <span style="font-weight:bold;">{{ itoo.institute }}</span>
+      </li>
+    </ul> -->
+
+    <ul class="centered-list" *ngFor="let in of ins">
+      <li class="online-list"><i class="{{ in.class }} icon"></i>{{in.title}}, {{ in.anio }},
+        <a href="https://www.linkedin.com/learning/subscription/topics?src=go-pa&trk=sem-ga_campid.17476246927_asid.140212061440_crid.603529552306_kw.linkedin%20learning_d.c_tid.kwd-310582843911_n.g_mt.e_geo.1000073&mcid=6977654453860491271&cid=&gclid=CjwKCAjwloynBhBbEiwAGY25dDvx-_ZLdf1JjfpHgnnFoWldaNbwS0vZhPHJ-FZyQt4YmOOXbgA42BoCgCoQAvD_BwE&gclsrc=aw.ds">
+          <span style="font-weight:bold;">{{ in.institute }}</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="centered-list" *ngFor="let puzzle of puzzles">
+      <li class="online-list"><i class="{{ puzzle.class }} icon"></i>{{puzzle.title}}, {{ puzzle.anio }},
+        <a href="https://academy.officepuzzle.com/">
+          <span style="font-weight:bold;">{{ puzzle.institute }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
+
+<app-social-media></app-social-media>

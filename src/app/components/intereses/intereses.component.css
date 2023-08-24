@@ -1,6 +1,7 @@
 .icon {
   color: #010575;
   margin-right: 10px;
+  font-size:18px;
 }
 
 .interests-list {
@@ -19,4 +20,8 @@
   color: #114d76;
   margin: 20px auto;
   margin-top: 120px !important;
+}
+
+.name {
+  font-size:18px;
 }

@@ -1,6 +1,33 @@
+.container-fluid {
+  margin:10px auto;
+  width:95%;
+}
+
+.font-link {
+  font-weight:bold;
+}
+
+.presencial-card, .online-card {
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left:30px;
+  width:45%;
+  padding:10px;
+  border: 2px solid #010575;
+  background-color:#d7edfa;
+}
+
 .list {
   list-style: none;
   margin-top: 10px;
+  margin-bottom:0px;
+}
+
+.online-list {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom:0px;
+  margin-left:-20px !important;
 }
 
 .text-bold {
@@ -14,19 +41,21 @@
 }
 
 .container-fluid {
+  display:inline-flex;
   width: 90%;
   margin: 10px auto;
   font-size: 20px;
 }
 
 .centered-list {
-  margin-top: 25px;
-  margin-bottom: 35px;
-  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 .icon {
   margin-right: 10px;
+  font-weight:700 !important;
 }
 
 .title {
@@ -34,7 +63,19 @@
   font-size: 26px;
   font-weight: bold;
   color: #114d76;
-  margin: 20px auto;
+  margin-left:60px;
+  /* margin: 20px auto; */
+  margin-top:20px !important;
+  text-align:left;
+}
+
+.main-title {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: bold;
+  color: #114d76;
+  /* margin: 20px auto; */
+  margin-top: 120px !important;
 }
 
 .learning-center {
@@ -42,4 +83,20 @@
   margin:15px 20px;
   color: #0099ff;
   margin-left: 35px;
+}
+
+a {
+  text-decoration:none;
+}
+
+/****************** MEDIA QUERIES *****************/
+@media screen and (max-width:900px){
+  .presencial-card, .online-card {
+    width:80%;
+  }
+
+  .centered-list {
+    margin-left: 0px;
+  }
+
 }

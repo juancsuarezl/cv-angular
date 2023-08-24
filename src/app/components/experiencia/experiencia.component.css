@@ -61,10 +61,11 @@ img {
   font-weight: 500;
   padding: 15px;
   width:95%;
-  height: 230px;
+  height: 320px;
   margin: 10px;
   margin-left: 0px !important;
-  background-color:#cde6f5;
+  background-color:#d7edfa;
+  border: 2px solid #010575;
 }
 
 .company-name {
@@ -74,9 +75,37 @@ img {
 
 }
 
+.charge, .description {
+  font-size:17px;
+}
+
 a {
   text-decoration: none;
   color: #3f3f3f;
+}
+
+/****************** MEDIA QUERIES *****************/
+@media screen and (max-width:768px){
+  .centered-list {
+    width:80%;
+    height: auto !important;
+    margin:10px auto;
+    display: block;
+  }
+
+  .card-content {
+    padding: 20px;
+    width:95%;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:890px){
+
+  .card-content {
+    height: 300px !important;
+  }
 }
 
 

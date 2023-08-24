@@ -27,35 +27,35 @@ export class InteresesComponent implements OnInit {
     {
       icon: "fas fa-tv",
       name: "TV, Series y Películas",
-      description:  "Fútbol, Béisbol, Baloncesto, Tenis, entre otros."
+      description:  "Netflix, Amazon Prime Video, entre otros."
 
     },
 
     {
       icon: "fas fa-code",
       name: "Programación en general",
-      description:  "Fútbol, Béisbol, Baloncesto, Tenis, entre otros."
+      description:  "Aplicaciones de Escritorio, Aplicaciones Web, FrontEnd, BackEnd, FullStack, entre otros."
 
     },
 
     {
       icon: "fas fa-home",
       name: "Hogar",
-      description:  "Fútbol, Béisbol, Baloncesto, Tenis, entre otros."
+      description:  "Familia, Unión Familiar, Paz, Armonía, entre otros."
 
     },
 
     {
       icon: "fas fa-user-friends",
       name: "Amistades",
-      description:  "Fútbol, Béisbol, Baloncesto, Tenis, entre otros."
+      description:  "Relaciones Interpersonales, Sana Convivencia, Trabajo en Equipo, Sinergia, entre otros."
 
     },
 
     {
       icon: "fas fa-headphones-alt",
       name: "Música",
-      description:  "Fútbol, Béisbol, Baloncesto, Tenis, entre otros."
+      description:  "Escuchar, Interpretar Música, tocar instrumentos musicales, cantar, componer canciones, entre otros."
 
     },
 

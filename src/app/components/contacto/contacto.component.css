@@ -1,3 +1,9 @@
+/* .container-fluid {
+
+  width:90%;
+  margin:10px auto;
+} */
+
 .title {
   font-family: 'Montserrat';
   font-size: 26px;
@@ -8,8 +14,11 @@
 }
 
 .contact {
-  width: 50%;
-  margin: 15px auto;
+  width: 70%;
+  margin: 10px auto;
+  background-color:#d7edfa;
+  padding:15px;
+  border-radius:10px;
 }
 
 .btn-custom {
@@ -18,6 +27,19 @@
   font-weight: 600;
   display: flex;
   margin:25px auto;
+  margin-bottom:-25px !important;
   width: 25%;
   justify-content: center;
+}
+
+input, textarea {
+  border: 2px solid #010575;
+  font-family:'Montserrat';
+}
+
+/************ MEDIA QUERIES ************/
+@media screen and (min-width:301px) and (max-width:600px){
+  .contact{
+    width:90% !important;
+  }
 }

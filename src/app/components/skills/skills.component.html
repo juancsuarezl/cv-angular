@@ -1,33 +1,35 @@
+<div class="text-center title">Mis destrezas</div>
 <div class="container-fluid">
 
   <!-- FRONTEND -->
-  <ul class="centered-list" *ngFor="let frontSkill of frontSkills" style="margin-top:120px;">
-    <div class="card card-content">
-      <li class="list card-title"><img src="{{frontSkill.icon}}" alt=""> {{ frontSkill.title }}</li>
-      <div class="inline-list">
-        <li class="list lang-content" *ngFor="let frontLanguage of frontLanguages">
-          <img class="logo-icon" src="{{frontLanguage.icon}}" alt="">{{ frontLanguage.name }}
+    <ul class="centered-list" *ngFor="let frontSkill of frontSkills" style="margin-top:120px;">
+      <div class="card card-content">
+        <li class="list card-title">
+          <i class="fa-solid fa-laptop"></i>
+          <!-- <img class="skill-icon" src="{{ frontSkill.icon }}" alt=""> -->
+          <span class="skill-title">{{ frontSkill.title }}</span>
         </li>
+        <div class="inline-list">
+          <li class="list lang-content" *ngFor="let frontLanguage of frontLanguages">
+            <img class="logo-icon" src="{{frontLanguage.icon}}" alt="">
+            <span class="language-name">{{ frontLanguage.name }}</span>
+          </li>
+        </div>
       </div>
-  </div>
-  </ul>
+    </ul>
+
 
   <!-- BACKEND -->
   <ul class="centered-list" *ngFor="let backSkill of backSkills" style="margin-top:120px;">
     <div class="card card-content">
-      <li class="list card-title"><img src="{{backSkill.icon}}" alt=""> {{ backSkill.title }}</li>
-      <li class="list lang-content" *ngFor="let backLanguage of backLanguages">
-       <img  class="logo-icon" src="{{ backLanguage.icon }}" alt="">{{ backLanguage.name }}
+      <li class="list card-title">
+        <!-- <img src="{{backSkill.icon}}" alt=""> -->
+        <i class="fa-solid fa-desktop"></i>
+        <span class="skill-title">{{ backSkill.title }}</span>
       </li>
-    </div>
-  </ul>
-
-  <!-- DB -->
-  <ul class="centered-list" *ngFor="let dbSkill of dbSkills" style="margin-top:120px;">
-    <div class="card card-content">
-      <li class="list card-title"><img src="{{dbSkill.icon}}" alt=""> {{ dbSkill.title }}</li>
-      <li class="list lang-content" *ngFor="let dbLanguage of dbLanguages">
-        <img class="logo-icon" src="{{dbLanguage.icon}}" alt="">{{ dbLanguage.name }}
+      <li class="list lang-content" *ngFor="let backLanguage of backLanguages">
+       <img  class="logo-icon" src="{{ backLanguage.icon }}" alt="">
+       <span>{{ backLanguage.name }}</span>
       </li>
     </div>
   </ul>
@@ -35,9 +37,31 @@
   <!-- TOOLS -->
   <ul class="centered-list" *ngFor="let toolSkill of toolSkills" style="margin-top:120px;">
     <div class="card card-content">
-      <li class="list card-title"><img src="{{toolSkill.icon}}" alt=""> {{ toolSkill.title }}</li>
+      <li class="list card-title">
+        <!-- <img src="{{toolSkill.icon}}" alt=""> -->
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <span class="skill-title">{{ toolSkill.title }}</span>
+      </li>
       <li class="list lang-content" *ngFor="let toolName of toolNames">
-        <img class="logo-icon" src="{{toolName.icon}}" alt="">{{ toolName.name }}
+        <img class="logo-icon" src="{{toolName.icon}}" alt="">
+        <span>{{ toolName.name }}</span>
+      </li>
+    </div>
+  </ul>
+
+
+  <!-- DB -->
+
+  <ul class="centered-list" *ngFor="let dbSkill of dbSkills" style="margin-top:120px;">
+    <div class="card card-content-2">
+      <li class="list card-title">
+        <!-- <img src="{{dbSkill.icon}}" alt=""> -->
+        <i class="fa-solid fa-database"></i>
+        <span class="skill-title"></span>{{ dbSkill.title }}
+      </li>
+      <li class="list lang-content" *ngFor="let dbLanguage of dbLanguages">
+        <img class="logo-icon" src="{{dbLanguage.icon}}" alt="">
+        <span>{{ dbLanguage.name }}</span>
       </li>
     </div>
   </ul>
@@ -45,9 +69,14 @@
   <!-- OS -->
   <ul class="centered-list" *ngFor="let operatingSystem of operatingSystems" style="margin-top:120px;">
     <div class="card card-content-2">
-      <li class="list card-title"><img src="{{operatingSystem.icon}}" alt=""> {{ operatingSystem.title }}</li>
+      <li class="list card-title">
+        <!-- <img src="{{operatingSystem.icon}}" alt=""> -->
+        <i class="fa-solid fa-computer"></i>
+        <span class="skill-title">{{ operatingSystem.title }}</span>
+      </li>
       <li class="list lang-content" *ngFor="let osName of osNames">
-        <img class="logo-icon" src="{{osName.icon}}" alt="">{{ osName.name }}
+        <img class="logo-icon" src="{{osName.icon}}" alt="">
+        <span>{{ osName.name }}</span>
       </li>
     </div>
   </ul>
@@ -55,12 +84,18 @@
   <!-- IDIOMAS -->
   <ul class="centered-list" *ngFor="let languageSkill of languageSkills" style="margin-top:120px;">
     <div class="card card-content-2">
-      <li class="list card-title"><img src="{{languageSkill.icon}}" alt=""> {{ languageSkill.title }}</li>
+      <li class="list card-title">
+        <!-- <img src="{{languageSkill.icon}}" alt=""> -->
+        <i class="fa-solid fa-globe"></i>
+        <span class="skill-title">{{ languageSkill.title }}</span>
+      </li>
       <li class="list lang-content" *ngFor="let languageName of languageNames">
-        <img class="logo-icon" src="{{languageName.icon}}" alt="">{{ languageName.name }}
+        <img class="logo-icon" src="{{languageName.icon}}" alt="">
+        {{ languageName.name }}
       </li>
     </div>
   </ul>
+
 
 </div>
 
